@@ -116,84 +116,6 @@
         <div class="container text-center py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <h2 class="display-1">Try Demo Account</h2>
-         <style>
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: red;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
-<input type="text" value="JG777" id="myInput">
-
-<div class="tooltip">
-<button onclick="myFunction()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy Demo CRM Login PassCode</span>
-  Copy PassCode
-  </button>
-</div>
-
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-  
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + copyText.value;
-}
-
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
-}
-</script>
-    <p>Please Copy the Password to view Demo Account</p>
-     <a class="btn btn-primary rounded-pill py-3 px-5" href="/TryDemoCRM"><ion-icon name="link"></ion-icon> Click here to try Demo</a><br><br>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-
-
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
                     <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
                     <h5 class="display-1">Login failed</h5>
                     <h4 class="mb-4">Wrong UserID & Password</h4>
@@ -209,7 +131,31 @@ function outFunc() {
         </div>
     </div>
         
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2 class="display-1">Try Demo Account</h2>
+    <p>Please Copy the Password to view Demo Account</p>
+                    <div class="container">
+  <div class="row">
+    <div class="card-body">
 
+      <form class="form-group" data-copy=true>
+        <div class="input-group col-m-12 mb-3">
+          <input type="text" class="form-control" value="JG777">
+          <div class="input-group-append">
+            <span class="input-group-text buttons"><button type="submit" class="button"><ion-icon name="copy"></ion-icon></button></span>
+          </div>
+        </div>
+      </form>
+<a class="btn btn-primary rounded-pill py-3 px-5" href="/TryDemoCRM"> Click here to try Demo</a><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+        <link href="https://joingigolo.in/css/copy.css" rel="stylesheet">
+                 <script src="https://joingigolo.in/js/copy.js"></script>
      <!-- Fact Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
